@@ -1,7 +1,3 @@
-//
-// Created by Ivan Pazhitnykh on 9/22/17.
-//
-
 #include "lab1.h"
 
 const string USAGE = "./lab1 -n <rows> -m <cols> -r <block_size> [-o <out_file>='output.txt']";

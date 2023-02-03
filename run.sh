@@ -1,14 +1,17 @@
 #!/usr/bin/env bash
 
-cmake --build build/  --target lab1 -- -j 4
+cmake CMakeLists.txt
+make
 
 printf '' > output.txt
 
-for n in 450 1500
+for n in 450
+do
+    echo $n 5 >> output.txt
+    for r in 1 25 50 75 150
     do
-        echo $n 5 >> output.txt
-        for r in 1 25 50 75 150
-            do
-                ./build/lab1 -n $n -m $n -r $r
-            done
+        echo "Running with flags - n $n -m $m -r $r"
+        ./lab1 -n $n -m $n -r $r
+        less output.txt
     done
+done

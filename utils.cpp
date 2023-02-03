@@ -1,7 +1,3 @@
-//
-// Created by Ivan Pazhitnykh on 9/22/17.
-//
-
 #include "utils.h"
 
 hr_clock::time_point Timer::start_time = hr_clock::now();

@@ -1,7 +1,3 @@
-//
-// Created by Ivan Pazhitnykh on 9/22/17.
-//
-
 #ifndef LAB1_UTILS_H
 #define LAB1_UTILS_H
 
